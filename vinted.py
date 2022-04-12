@@ -1,7 +1,7 @@
 # Author : LowHigh#3269
-# Discord : discord.gg/spyy
+# Discord : discord.gg/W6MRNaXwQ8
 # Github : https://github.com/TheLowHigh/
-# Updated at : 04/07/2022 16:55
+# Updated at : 04/07/2022 17:40
 # Version : 4.2
 # Description : Vinted Bot
 # Language : Python
