@@ -149,7 +149,7 @@ asciiart = f"""{Spy.rouge}
 ╚██╗ ██╔╝██╔══██╗██║   ██║   ██║   
  ╚████╔╝ ██████╔╝╚██████╔╝   ██║   
   ╚═══╝  ╚═════╝  ╚═════╝    ╚═╝   
-         Thx 2$py#5430                     \n\n"""
+         Thx LowHigh#3269                     \n\n"""
 
 print(asciiart + "\n\n")
 
@@ -175,8 +175,8 @@ class moniteur:
                         print(f"{Spy.blanc}[{Spy.vert}{post}{Spy.blanc}] - Nouvel item trouvé !")
                         info = get_info_post(x[str(post)]["url"])
 
-                        data = {"username": "$py",
-                                "avatar_url": "https://cdn.discordapp.com/avatars/755734583005282334/158a0c81f5a3bd1f283bedd5f817a524.webp?size=1024",
+                        data = {"username": "Vinted Bot",
+                                "avatar_url": "https://i.pinimg.com/736x/47/c7/59/47c7595f9d7350c27926ffc7c1bd22ac.jpg",
                                 "embeds": [
                                     {
                                         "description": f"```{configs['embed-color-text']}\n{info['description']}```",
@@ -190,7 +190,7 @@ class moniteur:
                                             "url": x[post]["photo"]["thumbnails"][4]["url"]
                                         },
                                         "footer": {
-                                            "text": f"つ ◕_◕ ༽つ Merci d'utiliser mes programmes ! <3",
+                                            "text": f"Merci d'utiliser le bot !",
                                             "icon_url": "https://cdn.discordapp.com/avatars/755734583005282334/158a0c81f5a3bd1f283bedd5f817a524.webp?size=1024"
                                         }
                                     }]}
