@@ -28,7 +28,7 @@ async def on_ready():
 
     """)
     print(f"Connecté à : {bot.user.name}")
-    await bot.change_presence(activity=discord.Game(name="Script from : https://github.com/2spy/Vinted-Discord-Bot"))
+    await bot.change_presence(activity=discord.Game(name="Meilleur bot Vinted"))
 
 
 @bot.command()
