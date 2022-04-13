@@ -14,8 +14,8 @@
 </p>
  
 
-<h2 align="center"> 🔩 Comment setup le bot ?</h2>
-<p align="center"> Lien de la vidéo youtube :<a href="https://youtu.be/eaStcisD9ow"> cliquez ici</a></p>
+<h2 align="center"> 🔩 Comment utiliser le bot ?</h2>
+<p align="center"> Rendez vous sur notre site et utilisez le dès maintenant :<a href="https://vintedbot.com"> cliquez ici</a></p>
 
 <h2 align="center"> 🛠️ Que peut-on faire avec le bot vinted</h2>
 <p align="center">
@@ -26,4 +26,4 @@
      <li>- Modifier la couleur de l'embed et la couleur du texte</li>
 </ul>
 <h2 align="center"> 🎟️ En cas de problème ?</h2>
-<p align="center">Rejoignez nous sur le discord :<a href="https://discord.gg/spyy"> cliquez ici</a> et ouvrez un ticket le staff s'occupera de votre demande</p>
+<p align="center">Rejoignez nous sur le discord :<a href="https://discord.gg/W6MRNaXwQ8"> cliquez ici</a>/p>
