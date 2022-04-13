@@ -26,4 +26,4 @@
      <li>- Modifier la couleur de l'embed et la couleur du texte</li>
 </ul>
 <h2 align="center"> 🎟️ En cas de problème ?</h2>
-<p align="center">Rejoignez nous sur le discord :<a href="https://discord.gg/W6MRNaXwQ8"> cliquez ici</a>/p>
+<p align="center">Rejoignez nous sur le discord :<a href="https://discord.gg/W6MRNaXwQ8"> cliquez ici</a> </p>
