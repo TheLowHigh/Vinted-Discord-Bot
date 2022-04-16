@@ -23,6 +23,8 @@ except:
     os.system("pip install requests")
     os.system("pip install bs4")
 
+client = commands.Bot("$")
+DiscordComponents(client)
 
 class Spy:
     gris = "\033[1;30;1m"
@@ -259,6 +261,7 @@ class moniteur:
                                 ]
                             interaction = await client.wait_for("button_click", check = lambda i: i.custom_id == "button1")
                             await interaction.send(content = "https://www.vinted.fr/transaction/buy/new?source_screen=item&transaction%5Bitem_id%5D=${item.id}", ephemeral=False)
+                        client.run('BOT_TOKEN')
                         
             except:
                 time.sleep(10)
