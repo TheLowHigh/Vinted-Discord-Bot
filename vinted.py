@@ -249,14 +249,14 @@ class moniteur:
                             time.sleep(60)
                         else:
                             posting.append(str(post))
-                            print(f"{Spy.blanc}[{Spy.bleu}POSTE{Spy.blanc}] - Poste envoyé !")
+                            print(f"{Spy.blanc}[{Spy.bleu}POSTE{Spy.blanc}] - Post envoyé !")
             except:
                 time.sleep(10)
 
 
 if len(configs["suburl"]) > 10:
     print(
-        f"{Spy.blanc}[{Spy.rouge}ERREUR{Spy.blanc}] - Trop de salon veuillez en enlever car le bot se fera rate limit !")
+        f"{Spy.blanc}[{Spy.rouge}ERREUR{Spy.blanc}] - Trop de salons veuillez en enlever car le bot se fera rate limit !")
 else:
     for webhurl in configs["suburl"]:
         print(
