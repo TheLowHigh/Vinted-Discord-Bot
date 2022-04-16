@@ -7,7 +7,9 @@
 # Language : Python
 
 
-
+import discord
+from discord_components import DiscordComponents, ComponentsBot, Button, SelectOption, Select
+import discord.ext.commands as commands
 import os
 import json
 import shutil
@@ -250,6 +252,14 @@ class moniteur:
                         else:
                             posting.append(str(post))
                             print(f"{Spy.blanc}[{Spy.bleu}POSTE{Spy.blanc}] - Post envoyé !")
+
+                        async def Acheter(ctx):
+                            components = [
+                                [Button(label="Acheter", style="5", emoji = "💵", custom_id="button1")]
+                                ]
+                            interaction = await client.wait_for("button_click", check = lambda i: i.custom_id == "button1")
+                            await interaction.send(content = "https://www.vinted.fr/transaction/buy/new?source_screen=item&transaction%5Bitem_id%5D=${item.id}", ephemeral=False)
+                        
             except:
                 time.sleep(10)
 
