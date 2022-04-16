@@ -253,7 +253,7 @@ class moniteur:
                             time.sleep(60)
                         else:
                             posting.append(str(post))
-                            print(f"{Spy.blanc}[{Spy.bleu}POSTE{Spy.blanc}] - Post envoyé !")
+                            print(f"{Spy.blanc}[{Spy.bleu}POST{Spy.blanc}] - Post envoyé !")
 
                         async def Acheter(ctx):
                             components = [
