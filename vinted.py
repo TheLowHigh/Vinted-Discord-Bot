@@ -254,26 +254,14 @@ class moniteur:
                         else:
                             posting.append(str(post))
                             print(f"{Spy.blanc}[{Spy.bleu}POST{Spy.blanc}] - Post envoyé !")
-
-                        async def Acheter(ctx):
-                            components = [
-                                [Button(label="Acheter", style="5", emoji = "💵", custom_id="button1")]
-                                ]
-                            interaction = await client.wait_for("button_click", check = lambda i: i.custom_id == "button1")
-                            await interaction.send(content = "https://www.vinted.fr/transaction/buy/new?source_screen=item&transaction%5Bitem_id%5D=${item.id}", ephemeral=False)
-                        client.run('BOT_TOKEN')
                         
             except:
                 time.sleep(10)
 
 
-if len(configs["suburl"]) > 10:
+for webhurl in configs["suburl"]:
     print(
-        f"{Spy.blanc}[{Spy.rouge}ERREUR{Spy.blanc}] - Trop de salons veuillez en enlever car le bot se fera rate limit !")
-else:
-    for webhurl in configs["suburl"]:
-        print(
-            f"{Spy.blanc}[{Spy.violet}LANCEMENT{Spy.blanc}] - Lancement de la tâche dans le salon {Spy.jaune}{configs['suburl'][webhurl]['salon']}")
+        f"{Spy.blanc}[{Spy.violet}LANCEMENT{Spy.blanc}] - Lancement de la tâche dans le salon {Spy.jaune}{configs['suburl'][webhurl]['salon']}")
 
-        t = threading.Thread(target=moniteur, args=[webhurl, configs["suburl"][str(webhurl)]["url"]])
-        t.start()
+    t = threading.Thread(target=moniteur, args=[webhurl, configs["suburl"][str(webhurl)]["url"]])
+    t.start()
