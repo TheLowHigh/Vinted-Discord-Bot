@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import os, json
+from toripchanger import TorIpChanger
 
 
 intents = discord.Intents().all()
