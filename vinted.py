@@ -6,9 +6,8 @@
 # Description : Vinted Bot
 # Language : Python
 
-
+from toripchanger import TorIpChanger
 import discord
-from discord_components import DiscordComponents, ComponentsBot, Button, SelectOption, Select
 import discord.ext.commands as commands
 import os
 import json
@@ -24,7 +23,8 @@ except:
     os.system("pip install bs4")
 
 client = commands.Bot("$")
-DiscordComponents(client)
+
+tor_ip_changer = TorIpChanger(tor_password='my password', tor_port=9051, local_http_proxy='127.0.0.1:8118')
 
 class Spy:
     gris = "\033[1;30;1m"
@@ -39,6 +39,7 @@ class Spy:
 
 def get_info_post(url):
     try:
+        tor_ip_changer.get_new_ip()
         time.sleep(2)
         print(f"{Spy.blanc}[{Spy.jaune}RECHERCHE{Spy.blanc}] - Le bot recupere les informations de l'item...")
         headers = requests.utils.default_headers()
@@ -102,6 +103,7 @@ def get_info_post(url):
 
 def search(url):
     try:
+        tor_ip_changer.get_new_ip()
         time.sleep(5)
         print(f"{Spy.blanc}[{Spy.gris}RECHERCHE{Spy.blanc}] - Le bot cherche des nouveaux items...")
         headers = requests.utils.default_headers()
