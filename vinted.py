@@ -7,11 +7,9 @@
 # Language : Python
 
 from toripchanger import TorIpChanger
-import discord
 import discord.ext.commands as commands
 import os
 import json
-import shutil
 import threading
 import time
 import sys
